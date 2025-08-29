@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Price Prediction Model</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script>
+        // Dictionary of states and their corresponding localities
+        const localityData = {
+            "Karnataka": [
+                "Bangalore North", "Bangalore South", "Bangalore East", "Bangalore West", 
+                "Mysore", "Mangalore", "Hubli-Dharwad", "Belgaum", "Gulbarga"
+            ],
+            "Delhi": [
+                "North Delhi", "South Delhi", "East Delhi", "West Delhi", "Central Delhi"
+            ],
+            "Maharashtra": [
+                "Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad"
+            ],
+            "Tamil Nadu": [
+                "Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem"
+            ]
+        };
+
+        // Function to update the locality options based on selected state
+        function updateLocalities() {
+            const state = document.getElementById('state').value;
+            const localitySelect = document.getElementById('locality');
+            
+            // Clear existing options
+            localitySelect.innerHTML = "";
+
+            // Add default option
+            const defaultOption = document.createElement('option');
+            defaultOption.text = "Select Locality";
+            defaultOption.disabled = true;
+            defaultOption.selected = true;
+            localitySelect.appendChild(defaultOption);
+
+            // Add new options based on the selected state
+            if (state in localityData) {
+                localityData[state].forEach(locality => {
+                    const option = document.createElement('option');
+                    option.value = locality;
+                    option.text = locality;
+                    localitySelect.appendChild(option);
+                });
+            }
+        }
+
+        // Function to update the number of bedrooms based on area and floors
+        function updateBedroomsLimit() {
+            const areaLength = document.getElementById('areaLength').value;
+            const areaBreadth = document.getElementById('areaBreadth').value;
+            const floors = document.getElementById('floors').value;
+
+            // Calculate the total area (in square feet)
+            const totalArea = areaLength * areaBreadth * floors;
+
+            // Calculate the maximum number of bedrooms (assuming 100 sq. ft. per bedroom)
+            const maxBedrooms = Math.floor(totalArea / 100); // 100 sq. ft. per bedroom
+
+            // Set the minimum number of bedrooms to 1, ensuring it is at least 1
+            const minBedrooms = 1;
+
+            // Ensure that the number of bedrooms is within the range (1 to maxBedrooms)
+            const bedroomInput = document.getElementById('bedrooms');
+            bedroomInput.setAttribute('min', minBedrooms);
+            bedroomInput.setAttribute('max', maxBedrooms);
+
+            // Optionally, if the user has entered a value, enforce this range
+            if (parseInt(bedroomInput.value) < minBedrooms) {
+                bedroomInput.value = minBedrooms;
+            } else if (parseInt(bedroomInput.value) > maxBedrooms) {
+                bedroomInput.value = maxBedrooms;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="heading-bar">
+        <h1>House Price Prediction Model</h1>
+    </div>
+    <form action="/calculate" method="POST">
+        <label for="state">State</label>
+        <select name="state" id="state" onchange="updateLocalities()">
+            <option value="" disabled selected>Select State</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+        </select>
+        
+        <label for="locality">Locality</label>
+        <select name="locality" id="locality">
+            <option value="" disabled selected>Select Locality</option>
+            <!-- Localities will be dynamically populated based on the selected state -->
+        </select>
+
+        <!-- Add other form fields as needed -->
+        <label for="year">Year</label>
+        <input type="number" name="year" id="year" min="2024" max="2050" required placeholder = "Enter Construction Year between 2024 to 2050">
+
+        <label for="areaLength">Length of Area (in feet)</label>
+        <input type="number" name="areaLength" id="areaLength" min="10" max="100" required onchange="updateBedroomsLimit()" placeholder = "Enter Length">
+
+        <label for="areaBreadth">Breadth of Area (in feet)</label>
+        <input type="number" name="areaBreadth" id="areaBreadth" min="10" max="100" required onchange="updateBedroomsLimit()" placeholder = "Enter Breadth">
+
+        <label for="floors">Number of Floors</label>
+        <input type="number" name="floors" id="floors" min="1" max="4" required onchange="updateBedroomsLimit()" placeholder="Select Floors">        
+
+        <label for="bedrooms">Number of Bedrooms</label>
+        <select name="bedrooms" id="bedrooms" required onchange="updateBedroomsLimit()">
+            <option value="" disabled selected>Select No. of Bedrooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+        </select>        
+
+        <label for="interiorType">Interior Type</label>
+        <select name="interiorType" id="interiorType" required>
+            <option value="Minimalistic">Minimalistic</option>
+            <option value="Modern">Modern</option>
+            <option value="Luxury">Luxury</option>
+        </select>
+
+        <button type="submit">Calculate</button>
+    </form>
+</body>
+</html>

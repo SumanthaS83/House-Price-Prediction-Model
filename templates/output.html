@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Calculation Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles1.css') }}">
+</head>
+<body>
+    <div class="header-bar">
+        <h1>Construction Cost Calculation Results</h1>
+    </div>
+    <div class="container">
+
+        <div class="result-section">
+            <h2>Land Cost</h2>
+            <p><strong>Land Price (Area x Land Price):</strong> {{ area_land_price }}</p>
+        </div>
+
+        <div class="result-section">
+            <h2>Construction Costs Breakdown</h2>
+            <p><strong>Wall Construction Cost:</strong> {{ wall_construction }}</p>
+            <p><strong>Tile Cost:</strong> {{ tile_cost }}</p>
+            <p><strong>Cement Cost:</strong> {{ cement_cost }}</p>
+            <p><strong>Foundation Cost:</strong> {{ foundation_cost }}</p>
+            <p><strong>Steel Cost:</strong> {{ steel_cost }}</p>
+            <p><strong>Electric Cost:</strong> {{ electric_cost }}</p>
+            <p><strong>Bathroom Cost:</strong> {{ bathroom_cost }}</p>
+            <p><strong>Interior Cost:</strong> {{ interior_cost }}</p>
+        </div>
+
+        <div class="result-section">
+            <h2>Estimated Price Range : {{ lower_bound }} to {{ upper_bound }}</h2>
+        </div>
+
+        <div class="actions">
+            <a href="/calculate" class="button">Calculate Again</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,451 @@
+year,locality,price,brick_cost
+2000,Mysore,500,6.8
+2000,Mysore,1000,8.2
+2000,Mangalore,700,6.5
+2000,Mangalore,1400,7.9
+2000,Hubli-Dharwad,400,6.3
+2000,Hubli-Dharwad,800,7.7
+2000,Belgaum,350,6
+2000,Belgaum,700,7.5
+2000,Gulbarga,250,5.8
+2000,Gulbarga,500,7.2
+2000,Bangalore North,800,7
+2000,Bangalore North,1200,8.5
+2000,Bangalore South,900,7.2
+2000,Bangalore South,1500,8.7
+2000,Bangalore East,800,7.3
+2000,Bangalore East,1200,8.8
+2000,Bangalore West,1000,7.1
+2000,Bangalore West,1500,8.6
+2001,Mysore,520,7.25
+2001,Mysore,1050,8.75
+2001,Mangalore,750,6.95
+2001,Mangalore,1500,8.45
+2001,Hubli-Dharwad,420,6.75
+2001,Hubli-Dharwad,850,8.25
+2001,Belgaum,370,6.45
+2001,Belgaum,740,8.05
+2001,Gulbarga,270,6.15
+2001,Gulbarga,550,7.65
+2001,Bangalore North,850,7.45
+2001,Bangalore North,1250,9.05
+2001,Bangalore South,950,7.65
+2001,Bangalore South,1600,9.25
+2001,Bangalore East,850,7.75
+2001,Bangalore East,1250,9.35
+2001,Bangalore West,1050,7.55
+2001,Bangalore West,1550,9.15
+2002,Mysore,550,7.7
+2002,Mysore,1100,9.3
+2002,Mangalore,800,7.4
+2002,Mangalore,1600,9
+2002,Hubli-Dharwad,450,7.2
+2002,Hubli-Dharwad,900,8.8
+2002,Belgaum,400,6.9
+2002,Belgaum,800,8.6
+2002,Gulbarga,300,6.5
+2002,Gulbarga,600,8.1
+2002,Bangalore North,900,7.9
+2002,Bangalore North,1300,9.6
+2002,Bangalore South,1000,8.1
+2002,Bangalore South,1700,9.8
+2002,Bangalore East,900,8.2
+2002,Bangalore East,1300,9.9
+2002,Bangalore West,1100,8
+2002,Bangalore West,1600,9.7
+2003,Mysore,580,8.15
+2003,Mysore,1150,9.85
+2003,Mangalore,850,7.85
+2003,Mangalore,1700,9.55
+2003,Hubli-Dharwad,480,7.65
+2003,Hubli-Dharwad,950,9.35
+2003,Belgaum,420,7.35
+2003,Belgaum,840,9.15
+2003,Gulbarga,320,6.85
+2003,Gulbarga,650,8.55
+2003,Bangalore North,950,8.35
+2003,Bangalore North,1350,10.15
+2003,Bangalore South,1100,8.55
+2003,Bangalore South,1800,10.35
+2003,Bangalore East,950,8.65
+2003,Bangalore East,1400,10.45
+2003,Bangalore West,1200,8.45
+2003,Bangalore West,1700,10.25
+2004,Mysore,600,8.6
+2004,Mysore,1200,10.4
+2004,Mangalore,900,8.3
+2004,Mangalore,1800,10.1
+2004,Hubli-Dharwad,500,8.1
+2004,Hubli-Dharwad,1000,9.9
+2004,Belgaum,450,7.8
+2004,Belgaum,900,9.15
+2004,Gulbarga,350,7.2
+2004,Gulbarga,700,9
+2004,Bangalore North,1000,8.8
+2004,Bangalore North,1400,10.7
+2004,Bangalore South,1200,9
+2004,Bangalore South,2000,10.9
+2004,Bangalore East,1000,9.1
+2004,Bangalore East,1500,11
+2004,Bangalore West,1300,8.9
+2004,Bangalore West,1800,10.8
+2005,Mysore,700,9.05
+2005,Mysore,1400,10.95
+2005,Mangalore,1100,8.75
+2005,Mangalore,2200,10.65
+2005,Hubli-Dharwad,600,8.55
+2005,Hubli-Dharwad,1200,10.45
+2005,Belgaum,550,8.25
+2005,Belgaum,1100,10.25
+2005,Gulbarga,400,7.55
+2005,Gulbarga,800,9.45
+2005,Bangalore North,1200,9.25
+2005,Bangalore North,1800,11.25
+2005,Bangalore South,1500,9.45
+2005,Bangalore South,2500,11.45
+2005,Bangalore East,1300,9.55
+2005,Bangalore East,2000,11.55
+2005,Bangalore West,1600,9.35
+2005,Bangalore West,2000,11.35
+2006,Mysore,850,9.5
+2006,Mysore,1700,11.5
+2006,Mangalore,1300,9.2
+2006,Mangalore,2600,11.2
+2006,Hubli-Dharwad,750,9
+2006,Hubli-Dharwad,1500,11
+2006,Belgaum,700,8.7
+2006,Belgaum,1400,10.8
+2006,Gulbarga,500,7.9
+2006,Gulbarga,1000,9.9
+2006,Bangalore North,1500,9.7
+2006,Bangalore North,2200,11.8
+2006,Bangalore South,1800,9.9
+2006,Bangalore South,3000,12
+2006,Bangalore East,1600,10
+2006,Bangalore East,2500,12.1
+2006,Bangalore West,1800,9.8
+2006,Bangalore West,2500,11.9
+2007,Mysore,1000,9.95
+2007,Mysore,2000,12.05
+2007,Mangalore,1600,9.65
+2007,Mangalore,3200,11.75
+2007,Hubli-Dharwad,900,9.45
+2007,Hubli-Dharwad,1800,11.55
+2007,Belgaum,850,9.15
+2007,Belgaum,1700,11.35
+2007,Gulbarga,600,8.25
+2007,Gulbarga,1200,10.35
+2007,Bangalore North,2000,10.25
+2007,Bangalore North,2800,12.35
+2007,Bangalore South,2500,10.35
+2007,Bangalore South,3500,12.55
+2007,Bangalore East,2100,10.45
+2007,Bangalore East,3000,12.65
+2007,Bangalore West,2300,10.25
+2007,Bangalore West,3000,12.45
+2008,Mysore,1200,10.4
+2008,Mysore,2400,12.6
+2008,Mangalore,2000,10.1
+2008,Mangalore,4000,12.3
+2008,Hubli-Dharwad,1100,9.9
+2008,Hubli-Dharwad,2200,12.1
+2008,Belgaum,1000,9.6
+2008,Belgaum,2000,11.9
+2008,Gulbarga,700,8.6
+2008,Gulbarga,1400,10.8
+2008,Bangalore North,2200,10.6
+2008,Bangalore North,3000,12.9
+2008,Bangalore South,2800,10.8
+2008,Bangalore South,4000,13.1
+2008,Bangalore East,2400,10.9
+2008,Bangalore East,3500,13.2
+2008,Bangalore West,2500,10.7
+2008,Bangalore West,3500,13
+2009,Mysore,1300,8.95
+2009,Mysore,2600,13.15
+2009,Mangalore,2200,10.55
+2009,Mangalore,4400,12.85
+2009,Hubli-Dharwad,1200,10.35
+2009,Hubli-Dharwad,2400,12.65
+2009,Belgaum,1100,10.05
+2009,Belgaum,2200,12.45
+2009,Gulbarga,800,8.95
+2009,Gulbarga,1600,11.25
+2009,Bangalore North,2300,11.05
+2009,Bangalore North,3200,13.45
+2009,Bangalore South,3000,11.25
+2009,Bangalore South,4200,13.65
+2009,Bangalore East,2800,11.35
+2009,Bangalore East,4000,13.75
+2009,Bangalore West,2700,11.15
+2009,Bangalore West,3800,13.5
+2010,Mysore,1500,11.3
+2010,Mysore,3000,13.7
+2010,Mangalore,2500,11
+2010,Mangalore,5000,13.4
+2010,Hubli-Dharwad,1400,10.8
+2010,Hubli-Dharwad,2800,13.2
+2010,Belgaum,1300,10.5
+2010,Belgaum,2600,13
+2010,Gulbarga,1000,9.3
+2010,Gulbarga,2000,11.7
+2010,Bangalore North,3500,11.5
+2010,Bangalore North,5000,14
+2010,Bangalore South,4000,11.7
+2010,Bangalore South,6000,14.2
+2010,Bangalore East,3000,11.8
+2010,Bangalore East,4500,14.3
+2010,Bangalore West,3500,11.6
+2010,Bangalore West,5000,14.1
+2011,Mysore,1600,11.75
+2011,Mysore,3200,14.25
+2011,Mangalore,2700,11.45
+2011,Mangalore,5400,13.95
+2011,Hubli-Dharwad,1500,11.25
+2011,Hubli-Dharwad,3000,13.75
+2011,Belgaum,1400,10.95
+2011,Belgaum,2800,13.55
+2011,Gulbarga,1100,9.65
+2011,Gulbarga,2200,12.15
+2011,Bangalore North,3700,11.95
+2011,Bangalore North,5200,14.55
+2011,Bangalore South,4300,12.15
+2011,Bangalore South,6500,14.75
+2011,Bangalore East,3300,12.25
+2011,Bangalore East,5000,14.85
+2011,Bangalore West,3800,12.05
+2011,Bangalore West,5200,14.65
+2012,Mysore,1700,12.2
+2012,Mysore,3400,14.8
+2012,Mangalore,3000,11.9
+2012,Mangalore,6000,14.5
+2012,Hubli-Dharwad,1600,11.7
+2012,Hubli-Dharwad,3200,14.3
+2012,Belgaum,1500,11.4
+2012,Belgaum,3000,14.1
+2012,Gulbarga,1200,10
+2012,Gulbarga,2400,12.6
+2012,Bangalore North,3900,12.4
+2012,Bangalore North,5400,15.1
+2012,Bangalore South,4600,12.6
+2012,Bangalore South,7000,15.3
+2012,Bangalore East,3600,12.7
+2012,Bangalore East,5500,15.4
+2012,Bangalore West,4200,12.5
+2012,Bangalore West,5800,15.2
+2013,Mysore,1800,12.65
+2013,Mysore,3600,15.35
+2013,Mangalore,3200,12.35
+2013,Mangalore,6400,15.05
+2013,Hubli-Dharwad,1700,12.15
+2013,Hubli-Dharwad,3400,14.85
+2013,Belgaum,1600,11.85
+2013,Belgaum,3200,14.65
+2013,Gulbarga,1300,10.35
+2013,Gulbarga,2600,13.05
+2013,Bangalore North,4100,12.85
+2013,Bangalore North,5600,15.65
+2013,Bangalore South,5000,13.05
+2013,Bangalore South,7500,15.85
+2013,Bangalore East,3900,13.15
+2013,Bangalore East,6000,15.95
+2013,Bangalore West,4500,12.95
+2013,Bangalore West,6200,15.75
+2014,Mysore,2000,13.3
+2014,Mysore,4000,15.9
+2014,Mangalore,3500,12.8
+2014,Mangalore,7000,15.6
+2014,Hubli-Dharwad,2000,12.6
+2014,Hubli-Dharwad,4000,15.4
+2014,Belgaum,1800,12.3
+2014,Belgaum,3600,15.2
+2014,Gulbarga,1500,10.7
+2014,Gulbarga,3000,13.5
+2014,Bangalore North,4500,13.3
+2014,Bangalore North,6000,16.2
+2014,Bangalore South,5500,13.5
+2014,Bangalore South,8000,16.4
+2014,Bangalore East,4500,13.6
+2014,Bangalore East,6800,16.5
+2014,Bangalore West,4800,13.4
+2014,Bangalore West,6800,16.3
+2015,Mysore,2200,13.55
+2015,Mysore,4400,16.45
+2015,Mangalore,3700,13.25
+2015,Mangalore,7400,16.15
+2015,Hubli-Dharwad,2300,13.05
+2015,Hubli-Dharwad,4500,15.95
+2015,Belgaum,2000,12.75
+2015,Belgaum,4000,15.75
+2015,Gulbarga,1700,11.05
+2015,Gulbarga,3400,13.95
+2015,Bangalore North,5000,13.75
+2015,Bangalore North,7500,16.75
+2015,Bangalore South,6500,13.95
+2015,Bangalore South,8500,16.95
+2015,Bangalore East,5000,14.05
+2015,Bangalore East,7000,17.05
+2015,Bangalore West,5500,13.85
+2015,Bangalore West,8000,16.85
+2016,Mysore,2400,14
+2016,Mysore,4800,17
+2016,Mangalore,4000,13.7
+2016,Mangalore,8000,16.7
+2016,Hubli-Dharwad,2600,13.5
+2016,Hubli-Dharwad,5000,16.5
+2016,Belgaum,2300,13.2
+2016,Belgaum,4500,16.3
+2016,Gulbarga,2000,11.4
+2016,Gulbarga,4000,14.4
+2016,Bangalore North,5300,14.2
+2016,Bangalore North,8000,17.3
+2016,Bangalore South,7000,14.4
+2016,Bangalore South,9000,17.5
+2016,Bangalore East,5400,14.5
+2016,Bangalore East,7500,17.6
+2016,Bangalore West,6000,14.3
+2016,Bangalore West,8500,17.45
+2017,Mysore,2600,14.45
+2017,Mysore,5200,17.55
+2017,Mangalore,4200,14.15
+2017,Mangalore,8400,17.25
+2017,Hubli-Dharwad,2800,13.95
+2017,Hubli-Dharwad,5400,17.05
+2017,Belgaum,2500,13.65
+2017,Belgaum,5000,16.85
+2017,Gulbarga,2200,11.75
+2017,Gulbarga,4400,14.85
+2017,Bangalore North,5600,14.65
+2017,Bangalore North,8300,17.85
+2017,Bangalore South,7300,14.85
+2017,Bangalore South,9200,18.05
+2017,Bangalore East,5800,14.95
+2017,Bangalore East,8000,18.15
+2017,Bangalore West,6500,14.75
+2017,Bangalore West,9000,17.95
+2018,Mysore,2800,14.9
+2018,Mysore,5600,18.1
+2018,Mangalore,4500,14.6
+2018,Mangalore,9000,17.8
+2018,Hubli-Dharwad,3000,14.4
+2018,Hubli-Dharwad,5800,17.6
+2018,Belgaum,2700,14.1
+2018,Belgaum,5400,17.4
+2018,Gulbarga,2400,12.1
+2018,Gulbarga,4800,15.3
+2018,Bangalore North,6000,15.1
+2018,Bangalore North,8700,18.4
+2018,Bangalore South,7500,15.3
+2018,Bangalore South,9500,18.6
+2018,Bangalore East,6200,15.4
+2018,Bangalore East,8500,18.7
+2018,Bangalore West,7000,15.2
+2018,Bangalore West,9500,18.5
+2019,Mysore,3000,15.35
+2019,Mysore,6000,18.65
+2019,Mangalore,4800,15.05
+2019,Mangalore,9600,18.35
+2019,Hubli-Dharwad,3200,14.85
+2019,Hubli-Dharwad,6000,18.15
+2019,Belgaum,3000,14.55
+2019,Belgaum,6000,17.95
+2019,Gulbarga,2600,12.45
+2019,Gulbarga,5000,15.75
+2019,Bangalore North,6500,15.55
+2019,Bangalore North,9200,18.95
+2019,Bangalore South,7800,15.75
+2019,Bangalore South,9800,19.15
+2019,Bangalore East,6800,15.85
+2019,Bangalore East,9000,19.25
+2019,Bangalore West,7500,15.65
+2019,Bangalore West,10000,19.05
+2020,Mysore,3200,15.8
+2020,Mysore,6400,18.2
+2020,Mangalore,5000,15.5
+2020,Mangalore,10000,18.9
+2020,Hubli-Dharwad,3400,15.3
+2020,Hubli-Dharwad,6400,18.7
+2020,Belgaum,3200,15
+2020,Belgaum,6400,18.5
+2020,Gulbarga,2800,12.8
+2020,Gulbarga,5400,16.2
+2020,Bangalore North,7000,16
+2020,Bangalore North,9500,19.5
+2020,Bangalore South,8000,16.2
+2020,Bangalore South,10000,19.7
+2020,Bangalore East,7000,16.3
+2020,Bangalore East,9500,19.8
+2020,Bangalore West,8000,16.1
+2020,Bangalore West,10500,19.6
+2021,Mysore,3400,16.25
+2021,Mysore,6800,19.75
+2021,Mangalore,5200,15.95
+2021,Mangalore,10400,19.45
+2021,Hubli-Dharwad,3600,15.75
+2021,Hubli-Dharwad,6800,19.25
+2021,Belgaum,3400,15.45
+2021,Belgaum,6800,19.05
+2021,Gulbarga,3000,13.15
+2021,Gulbarga,5800,16.65
+2021,Bangalore North,7200,16.45
+2021,Bangalore North,10000,20.05
+2021,Bangalore South,8500,16.65
+2021,Bangalore South,10500,20.25
+2021,Bangalore East,7500,16.75
+2021,Bangalore East,10000,20.35
+2021,Bangalore West,8500,16.55
+2021,Bangalore West,11000,20.15
+2022,Mysore,3600,16.7
+2022,Mysore,7200,20.3
+2022,Mangalore,5500,16.4
+2022,Mangalore,11000,20
+2022,Hubli-Dharwad,3800,16.2
+2022,Hubli-Dharwad,7200,19.8
+2022,Belgaum,3600,15.9
+2022,Belgaum,7200,19.6
+2022,Gulbarga,3200,13.5
+2022,Gulbarga,6000,17.1
+2022,Bangalore North,7500,16.9
+2022,Bangalore North,11000,20.6
+2022,Bangalore South,9000,17.1
+2022,Bangalore South,11000,20.8
+2022,Bangalore East,8000,17.2
+2022,Bangalore East,11000,20.9
+2022,Bangalore West,9000,17
+2022,Bangalore West,12000,20.7
+2023,Mysore,3800,17.15
+2023,Mysore,7600,20.85
+2023,Mangalore,5800,16.85
+2023,Mangalore,11600,20.55
+2023,Hubli-Dharwad,4000,16.6
+2023,Hubli-Dharwad,7600,20.35
+2023,Belgaum,3800,16.35
+2023,Belgaum,7600,20.15
+2023,Gulbarga,3400,13.85
+2023,Gulbarga,6400,17.55
+2023,Bangalore North,8000,17.35
+2023,Bangalore North,11500,21.15
+2023,Bangalore South,9500,17.55
+2023,Bangalore South,12000,21.35
+2023,Bangalore East,9000,17.65
+2023,Bangalore East,12000,21.45
+2023,Bangalore West,9500,17.45
+2023,Bangalore West,12500,21.25
+2024,Mysore,4000,17.6
+2024,Mysore,8000,21.4
+2024,Mangalore,6000,17.3
+2024,Mangalore,12000,21.1
+2024,Hubli-Dharwad,4200,17.1
+2024,Hubli-Dharwad,8000,20.9
+2024,Belgaum,4000,16.8
+2024,Belgaum,8000,20.7
+2024,Gulbarga,3600,14.2
+2024,Gulbarga,6800,18
+2024,Bangalore North,8500,17.8
+2024,Bangalore North,12000,21.7
+2024,Bangalore South,9000,18
+2024,Bangalore South,14000,21.9
+2024,Bangalore East,10000,18.1
+2024,Bangalore East,13000,22
+2024,Bangalore West,10000,17.9
+2024,Bangalore West,13000,21.8

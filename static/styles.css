@@ -1,0 +1,125 @@
+/* General page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+body::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Position it behind everything */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('image.jpg'); /* Replace with your actual image file path */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.9) blur(5px); /* Darken and blur the background image */
+    z-index: -1; /* Ensure it's behind all other content */
+}
+
+/* Title heading styling */
+.heading-bar {
+    width: 100%;
+    background: linear-gradient(to right, #6a11cb, #2575fc);  /* Gradient between the specified colors */
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Title animation for dynamic effect */
+@keyframes titleAnimation {
+    0% {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+    50% {
+        background: linear-gradient(to right, #2575fc, #6a11cb);
+    }
+    100% {
+        background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+}
+
+/* Form container styling */
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Form labels and inputs styling */
+label {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+input::placeholder, select::placeholder {
+    color: black;
+}
+
+input, select {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form input  {
+    width:95%
+}
+
+input:focus, select:focus {
+    border-color: #6a11cb;
+    outline: none;
+}
+
+/* Button styling */
+button {
+    padding: 12px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6a11cb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,115 @@
+/* Basic styling for body and container */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+body::before {
+    content: ''; /* Empty content for pseudo-element */
+    position: absolute; /* Position it behind everything */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('image.jpg'); /* Replace with your actual image file path */
+    background-size: cover;
+    background-position: center;
+    filter: brightness(0.7) blur(5px); /* Darken and blur the background image */
+    z-index: -1; /* Ensure it's behind all other content */
+}
+
+/* Heading bar at the top */
+.header-bar {
+    width: 100%;
+    background: linear-gradient(to right, #6a11cb, #2575fc);  /* Gradient between the specified colors */
+    position: fixed;
+    top: 0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    color: white;
+    font-size: 36px;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Container for content */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section styling for results */
+.result-section {
+    margin-bottom: 30px;
+}
+
+.result-section h2 {
+    color: #2575fc;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #6a11cb; /* Adding a line in between */
+}
+
+.result-section p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Go Back button styling */
+.actions {
+    text-align: center;
+}
+
+.actions .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2575fc;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.actions .button:hover {
+    background-color: #6a11cb;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .result-section h2 {
+        font-size: 1.2rem;
+    }
+
+    .result-section p {
+        font-size: 0.9rem;
+    }
+}
